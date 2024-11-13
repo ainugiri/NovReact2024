@@ -1,13 +1,12 @@
-import { Component } from "react";
-
-class Users extends Component {
-    render() {
+function Users(props) {
         return (
         <div>
             <h1>Users Component</h1>
-            <h6>{this.props.name}</h6> 
+            <h6>{props.name}</h6> 
         </div>
         );
-    }
+}
+Users.defaultProps = {
+    name: 'XXXXXX'
 }
 export default Users;

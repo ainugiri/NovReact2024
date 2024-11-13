@@ -2,6 +2,7 @@ import './App.css';
 import CompA from './Components/CompA';
 import Users from './Components/Users';
 import DisplayProd from './Components/DisplayProd';
+import KartPage from './Components/KartPage';
 function App() {
   const products = [
     {name: 'iPhone', qty: 10, description: 'Product iPhone Description', price: 100},
@@ -16,6 +17,27 @@ function App() {
     <div>
       <CompA />
       <Users name="Michael"/>
+      <Users name = 'Steve' />
+      <Users name = 'John' />
+      <Users name = 'Robert' />
+      <Users />
+
+      <KartPage items="Product 1" />
+      <KartPage items="Product 2" />
+      <KartPage items="Product 3" />
+      <KartPage items="Product 4" />
+      <KartPage items="Product 5" />
+      <KartPage />
+
+
+
+
+
+
+
+
+
+
       {products.map((product, index) => {
         return <DisplayProd key={index} name={product.name} qty={product.qty} description={product.description} price={product.price} />
       })}
